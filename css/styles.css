@@ -15,6 +15,7 @@
     --secondary-header-color: #212121;
     --team-cards-bg-color: #f5f4fa;
     --border-bottom-color: #ececec;
+    --icon-hover: rgba(33, 150, 243, 1);
 }
 
 h1,
@@ -32,6 +33,10 @@ figure {
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-text-color);
+}
+
+img {
+    vertical-align: middle;
 }
 
 .section {
@@ -89,11 +94,16 @@ ul {
 
 .head-contact {
     display: flex;
+    gap: 10px;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     text-decoration: none;
     color: var(--head-contact-color);
+    /* width: min-content; */
+    fill: currentColor;
 }
+
 .head-contact:hover,
 .head-contact:focus {
     color: var(--active-color);
@@ -155,7 +165,7 @@ ul {
 
 .card-box-text {
     padding: 20px 24px;
-    margin-top: -4px;
+    /* margin-top: -4px; */
     border: 1px solid var(--card-box-border-color);
     border-top: 0;
 }
@@ -171,12 +181,11 @@ ul {
     padding: 60px 0;
 }
 address {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 .foot-contact {
-   
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -218,6 +227,10 @@ a {
 
 .hero {
     background: var(--title-color);
+    background-image: url('../images/hero_work_in_office.jpg'),
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     padding: 200px 0;
 }
@@ -312,8 +325,7 @@ a {
 .head-contact-container {
     display: flex;
     justify-content: end;
-    /* margin-left: 371px; */
-    gap: 50px;
+    gap: 30px;
 }
 
 .article-list {
