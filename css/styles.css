@@ -16,6 +16,7 @@
     --team-cards-bg-color: #f5f4fa;
     --border-bottom-color: #ececec;
     --icon-hover: rgba(33, 150, 243, 1);
+    --article-icon-bg: #f5f4fa;
 }
 
 h1,
@@ -57,7 +58,6 @@ ul {
 .logo {
     display: flex;
     justify-content: flex-start;
-
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -100,7 +100,6 @@ ul {
     font-size: 14px;
     text-decoration: none;
     color: var(--head-contact-color);
-    /* width: min-content; */
     fill: currentColor;
 }
 
@@ -180,6 +179,7 @@ ul {
     background-color: var(--foot-bg-color);
     padding: 60px 0;
 }
+
 address {
     display: flex;
     flex-direction: column;
@@ -306,6 +306,7 @@ a {
     letter-spacing: 0.03em;
     color: var(--card-subtitle-color);
     margin-top: 10px;
+    margin-bottom: 16px;
 }
 
 /* HW - 03 */
@@ -327,7 +328,14 @@ a {
     justify-content: end;
     gap: 30px;
 }
-
+.article-icons {
+    width: 270px;
+    height: 120px;
+    padding: 25px 102.34px;
+    margin-bottom: 30px;
+    background: var(--article-icon-bg);
+    border-radius: 4px;
+}
 .article-list {
     display: flex;
     gap: 30px;
@@ -342,4 +350,65 @@ a {
 .team-cards-text {
     padding: 30px 32px;
     text-align: center;
+}
+
+/* HW04 */
+.members-socials-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.members-socials-item {
+    fill: #afb1b8;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.members-socials-item:hover {
+    background-color: var(--active-color);
+    fill: var(--bg-color);
+}
+/* partners */
+.partners-logos-list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.partners-logos {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    border-color: #afb1b8;
+    padding: 16px 32px;
+    fill: #afb1b8;
+}
+.partners-logos:hover {
+    border-color: var(--active-color);
+    fill: currentColor;
+}
+/* footer socials */
+.footer-socials-join {
+    color: var(--bg-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-socials-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer-socials-item {
+    fill: var(--bg-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.footer-socials-item:hover {
+    background-color: var(--active-color);
 }
