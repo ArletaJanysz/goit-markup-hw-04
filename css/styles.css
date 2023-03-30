@@ -222,7 +222,7 @@ a {
 /* index.html spec styles */
 
 .main-background {
-    background: #ffffff;
+    background: var(--bg-color);
 }
 
 .hero-title {
