@@ -96,7 +96,7 @@ ul {
     color: var(--nav-link-color);
 }
 .nav-link:hover,
-.nav-list:focus {
+.nav-link:focus {
     color: var(--active-color);
 }
 
@@ -379,6 +379,7 @@ a {
 }
 
 .members-socials-item {
+    display: flex;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
