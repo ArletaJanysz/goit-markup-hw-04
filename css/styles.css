@@ -376,7 +376,6 @@ a {
     fill: var(--active-color)
 } */
 
-
 .members-socials-item {
     border-radius: 50%;
     justify-content: center;
@@ -413,21 +412,14 @@ a {
     /* fill: currentColor; */
 }
 
-
-
-
 .partners-logos > a > svg {
     fill: var(--icons-fill);
-    
 }
 .partners-logos:hover > a > svg,
-.partners-logos:hover,
- {    border-color: var(--active-color);
+.partners-logos:hover {
+    border-color: var(--active-color);
     fill: var(--active-color);
 }
-
-
-
 
 /* footer socials */
 .footer-socials-join {
@@ -464,10 +456,8 @@ a {
     background-color: var(--active-color);
 }
 
-
 li:focus > svg {
-  fill: red;
- 
+    fill: red;
 }
 
 li:focus {
