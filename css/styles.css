@@ -421,13 +421,13 @@ a:is(:hover, :focus) > svg {
     justify-content: center;
     align-items: center;
     padding: 16px 32px;
-    /* fill: currentColor; */
+   
 }
 
-.partners-logos > a > svg {
+.partners-logos > svg {
     fill: var(--icons-fill);
 }
-.partners-logos:hover > a > svg,
+.partners-logos:hover > svg,
 .partners-logos:hover {
     border-color: var(--active-color);
     fill: var(--active-color);
