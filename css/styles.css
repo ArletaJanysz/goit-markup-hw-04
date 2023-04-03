@@ -96,7 +96,7 @@ ul {
     color: var(--nav-link-color);
 }
 .nav-link:hover,
-.nav-link:focus {
+.nav-list:focus {
     color: var(--active-color);
 }
 
@@ -389,12 +389,19 @@ a {
     fill: var(--icons-fill);
 }
 
-a:is(:hover, :focus) {
-        background-color: var(--active-color);
-   
+.members-socials-item:is(:hover, :focus) {
+    background-color: var(--active-color);
 }
 
-a:is(:hover, :focus) > svg {
+.members-socials-item:is(:hover, :focus) > svg {
+    fill: var(--bg-color);
+}
+
+.footer-socials-item:is(:hover, :focus) {
+    background-color: var(--active-color);
+}
+
+.footer-socials-item:is(:hover, :focus) > svg {
     fill: var(--bg-color);
 }
 
@@ -453,8 +460,6 @@ a:is(:hover, :focus) > svg {
 .footer-socials-item > svg {
     fill: var(--bg-color);
 }
-
-
 
 li:focus > svg {
     fill: var(--active-color);
