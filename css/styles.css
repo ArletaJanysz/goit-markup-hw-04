@@ -372,6 +372,11 @@ a {
     gap: 10px;
 }
 
+/* .members-socials-links > li:focus > svg {
+    fill: var(--active-color)
+} */
+
+
 .members-socials-item {
     border-radius: 50%;
     justify-content: center;
@@ -408,14 +413,22 @@ a {
     /* fill: currentColor; */
 }
 
+
+
+
 .partners-logos > a > svg {
     fill: var(--icons-fill);
+    
 }
 .partners-logos:hover > a > svg,
-.partners-logos:hover {
-    border-color: var(--active-color);
+.partners-logos:hover,
+ {    border-color: var(--active-color);
     fill: var(--active-color);
 }
+
+
+
+
 /* footer socials */
 .footer-socials-join {
     color: var(--bg-color);
@@ -451,6 +464,12 @@ a {
     background-color: var(--active-color);
 }
 
-/* zmiana po najechaniu na logo partnerów
-    zmiana po najechaniu na socjale
-    ogarnięcie portfolio */
+
+li:focus > svg {
+  fill: red;
+ 
+}
+
+li:focus {
+    border-color: red;
+}
